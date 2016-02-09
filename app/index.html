@@ -14,18 +14,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <head>
   <script type="text/javascript">
     var host = "eunate.ch";
-    var hostsub = "www.eunate.ch";
+    // var hostsub = "www.eunate.ch";
+    // window.console.log(host);
+    // window.console.log(hostsub);
+    // window.console.log(window.location.host);
+    // window.console.log(window.location.protocol);
     if (
-      (host == window.location.host || hostsub == window.location.host) &&
+      (host == window.location.host// || hostsub == window.location.host
+        ) &&
       (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
+
+  <link rel="canonical" href="https://eunate.ch" />
 
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit">
-  <title>Eunate Technology</title>
+  <title>Eunate Technology Ltd.</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
 
@@ -113,8 +120,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-icon-button icon="search"></paper-icon-button>
 
           <!-- Application name -->
-          <div class="middle middle-container">
-            <div class="app-name">Eunate Technology Ltd.<div></div></div>
+          <div class="middle middle-container branding">
+            <div class="app-name">
+            <a href="https://www.eunate.ch">Eunate Technology Ltd.<img src="./images/eunatech_pink.svg" alt="Eunatech"></a>
+            </div>
           </div>
 
           <!-- Application sub title -->
