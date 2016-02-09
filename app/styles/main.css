@@ -14,7 +14,12 @@ body {
 
 paper-card.construction{
   width: 100%;
-  background-color: #FF9800;
+  background-color: #E91E63;
+  color: #FFF;
+}
+
+.construction.paper-card-0 .header.paper-card .title-text.paper-card{
+  color: #FFF!important;
 }
 
 .branding img{
@@ -32,7 +37,7 @@ paper-card.construction{
   }
 
   paper-toolbar#mainToolbar{
-    background-image: url(../images/blueprint.png), linear-gradient(to bottom, #004D40, #26A69A);
+    background-image: url(../images/blueprint.png), linear-gradient(to bottom, #311B92, #7E57C2);
   }
 
 
