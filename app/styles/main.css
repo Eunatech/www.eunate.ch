@@ -12,9 +12,14 @@ body {
   color: #333;
 }
 
+paper-card.construction{
+  width: 100%;
+  background-color: #FF9800;
+}
+
 .branding img{
   display: inline-block;
-  height: 1em;
+  height: 1.2em;
   margin: -.1em .25em -.1em 0;
   position: relative;
   top: -.1em;
@@ -26,6 +31,96 @@ body {
       text-decoration: inherit;
   }
 
-  paper-toolbar.branding{
+  paper-toolbar#mainToolbar{
     background-image: url(../images/blueprint.png), linear-gradient(to bottom, #004D40, #26A69A);
   }
+
+
+/*hacks.mozilla*/
+  .branding:hover .logo-askew {
+  -webkit-animation-name: skew;
+  animation-name: skew;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: 86% 15%;
+  -ms-transform-origin: 86% 15%;
+  transform-origin: 86% 15%;
+}
+
+.branding .logo-askew {
+  -webkit-animation-name: unskew;
+  animation-name: unskew;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(.75, -2, .75, 2);
+  animation-timing-function: cubic-bezier(.75, -2, .75, 2);
+  -webkit-transform-origin: 86% 15%;
+  -ms-transform-origin: 86% 15%;
+  transform-origin: 86% 15%;
+}
+
+.branding span {
+  display: inline-block;
+}
+
+@-webkit-keyframes unskew {
+  0% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes unskew {
+  0% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes skew {
+  40% {
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
+  }
+  60% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  to {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
+@keyframes skew {
+  40% {
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
+  }
+  60% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  to {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
