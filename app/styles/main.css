@@ -20,3 +20,12 @@ body {
   top: -.1em;
   vertical-align: middle;
   }
+
+  .branding a{
+      color: #fff;
+      text-decoration: inherit;
+  }
+
+  paper-toolbar.branding{
+    background-image: url(../images/blueprint.png), linear-gradient(to bottom, #004D40, #26A69A);
+  }
