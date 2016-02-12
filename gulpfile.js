@@ -125,7 +125,7 @@ gulp.task('images', function() {
 gulp.task('copy', function() {
   var app = gulp.src([
     'CNAME',
-    'app/*',
+    'app/*',,
     '!app/test',
     '!app/elements',
     '!app/bower_components',
@@ -135,13 +135,21 @@ gulp.task('copy', function() {
     dot: true
   }).pipe(gulp.dest(dist()));
 
+  // copy data recursively
+  var data = gulp.src([
+    'app/data/**/*',
+    '!**/.DS_Store'
+  ], {
+    dot: true
+  }).pipe(gulp.dest(dist('data')));
+
   // Copy over only the bower_components we need
   // These are things which cannot be vulcanized
   var bower = gulp.src([
     'app/bower_components/{webcomponentsjs,platinum-sw,sw-toolbox,promise-polyfill}/**/*'
   ]).pipe(gulp.dest(dist('bower_components')));
 
-  return merge(app, bower)
+  return merge(app, data, bower)
     .pipe($.size({
       title: 'copy'
     }));

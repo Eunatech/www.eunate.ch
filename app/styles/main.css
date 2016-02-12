@@ -12,6 +12,8 @@ body {
   color: #333;
 }
 
+/*CONSTRUCTION MESSAGE*/
+
 paper-card.construction{
   width: 100%;
   background-color: #E91E63;
@@ -21,6 +23,8 @@ paper-card.construction{
 .construction.paper-card-0 .header.paper-card .title-text.paper-card{
   color: #FFF!important;
 }
+
+/* mozilla blueprint*/
 
 .branding img{
   display: inline-block;
@@ -131,6 +135,7 @@ paper-card.construction{
 }
 
 /*CARDS*/
+
     #cards {
       margin-left: auto;
       margin-right: auto;
@@ -141,7 +146,7 @@ paper-card.construction{
     }
     #cards paper-card {
       width: 100%;
-      max-width: 300px;
+      max-width: 230px;
     }
     .avatar {
       display: inline-block;
@@ -172,16 +177,4 @@ paper-card.construction{
     .fancy .medium {
       font-size: 16px;
       padding-bottom: 8px;
-    }
-    .card-content.pi{
-      /*background-color: var(--paper-indigo-400);*/
-      /*color: var(--paper-indigo-500);*/
-    }
-    .card-content.rc{
-      /*background-color: var(--paper-blue-400);*/
-      /*color:var(--paper-green-500);*/
-    }
-    .card-content.ra{
-      /*background-color: var(--paper-light-blue-400);*/
-      /*color:var(--paper-amber-500);*/
     }
