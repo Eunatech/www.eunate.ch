@@ -141,9 +141,10 @@ paper-card.construction{
       margin-right: auto;
     }
 
-    paper-card{
+    .fancy {
       margin-bottom: 16px;
     }
+    
     #cards paper-card {
       width: 100%;
       max-width: 230px;
