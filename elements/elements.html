@@ -10,6 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
 
+
 </head><body><div hidden="" by-vulcanize=""><script>(function () {
 function resolve() {
 document.body.removeAttribute('unresolved');
@@ -17046,92 +17047,14 @@ module.exports = Array.isArray || function (arr) {
         margin-left: auto;
         margin-right: auto;
     }
+
+        .bigIcon{
+      --iron-icon-height: 64px;
+      --iron-icon-width: 64px;
+      --iron-icon-fill-color: #F9F9F9;
+    }
     </style>
   </template>
-</dom-module>
-<dom-module id="my-greeting" assetpath="my-greeting/">
-  <template>
-    <style include="shared-styles">
-      :host {
-        display: block;
-      }
-
-      span,
-      input {
-        @apply(--paper-font-body2);
-      }
-    </style>
-
-    <h2 class="page-title">{{greeting}}</h2>
-    <span>Update text to change the greeting.</span>
-    
-    <input value="{{greeting::input}}">
-  </template>
-
-  <script>
-    (function() {
-      'use strict';
-
-      Polymer({
-        is: 'my-greeting',
-
-        properties: {
-          greeting: {
-            type: String,
-            value: 'Welcome!',
-            notify: true
-          }
-        }
-      });
-    })();
-  </script>
-</dom-module>
-<dom-module id="my-list" assetpath="my-list/">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-
-      span {
-        @apply(--paper-font-body1);
-      }
-    </style>
-
-    <ul>
-      <template is="dom-repeat" items="{{items}}">
-        <li><span>{{item}}</span></li>
-      </template>
-    </ul>
-  </template>
-
-  <script>
-    (function() {
-      'use strict';
-
-      Polymer({
-        is: 'my-list',
-
-        properties: {
-          items: {
-            type: Array,
-            notify: true,
-          }
-        },
-
-        ready: function() {
-          this.items = [
-            'Responsive Web App boilerplate',
-            'Iron Elements and Paper Elements',
-            'End-to-end Build Tooling (including Vulcanize)',
-            'Unit testing with Web Component Tester',
-            'Routing with Page.js',
-            'Offline support with the Platinum Service Worker Elements'
-          ];
-        }
-      });
-    })();
-  </script>
 </dom-module>
 <dom-module id="chris-brain" assetpath="chris-brain/">
   <template>
@@ -18253,4 +18176,29 @@ THREE.MorphBlendMesh.prototype.update=function(a){for(var b=0,c=this.animationsL
        })();
   </script>
 
-</dom-module></div></body></html>
+</dom-module><dom-module id="my-footer" assetpath="my-footer/">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      div{
+        margin-top: 20px;
+      }
+    </style>
+
+    <div>© 2016 Eunate Technology, Ltd. - Made with ♥ from <img src="../images/basque-flag-32x32.png">. Code licensed under the BSD License.</div>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'my-footer'
+      });
+    })();
+  </script>
+</dom-module>
+</div></body></html>
