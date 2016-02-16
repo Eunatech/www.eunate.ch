@@ -153,16 +153,6 @@ paper-card.construction{
       border-radius: 50%;
       background-color: #9575CD;
     }
-    
-    .cards paper-card {
-      width: 100%;
-      max-width: 230px;
-    }
-
-    .cards paper-card.narrow {
-      width: 100%;
-      max-width: 180px;
-    }
 
     .avatar {
       display: inline-block;
@@ -185,12 +175,17 @@ paper-card.construction{
     .fancy img {
       width: 100%;
     }
-    .big {
-      font-size: 22px;
-      padding: 8px 0 16px;
-      color: var(--google-grey-500);
-    }
+
     .medium {
       font-size: 16px;
+      /*padding-bottom: 8px;*/
+    }
+
+    .title.medium {
+      font-size: 20px;
       padding-bottom: 8px;
+    }
+
+    .intro{
+      padding: 40px 0;
     }
