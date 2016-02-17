@@ -26,4 +26,36 @@
       --iron-icon-width: 64px;
       --iron-icon-fill-color: #F9F9F9;
     }
+
+    .cards paper-card {
+        width: 230px;
+    }
+    @media (max-width: 230px) {
+      .cards paper-card {
+        width: 100%;
+      }
+    }
+
+    .cards paper-card.narrow {
+        width: 180px;
+    }
+    @media (max-width: 180px) {
+      .cards paper-card.narrow {
+        width: 100%;
+      }
+    }
+
+
+    .title.big {
+      font-size: 26px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+
+    .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+
     </style></template></dom-module>

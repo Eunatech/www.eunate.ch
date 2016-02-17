@@ -17053,6 +17053,38 @@ module.exports = Array.isArray || function (arr) {
       --iron-icon-width: 64px;
       --iron-icon-fill-color: #F9F9F9;
     }
+
+    .cards paper-card {
+        width: 230px;
+    }
+    @media (max-width: 230px) {
+      .cards paper-card {
+        width: 100%;
+      }
+    }
+
+    .cards paper-card.narrow {
+        width: 180px;
+    }
+    @media (max-width: 180px) {
+      .cards paper-card.narrow {
+        width: 100%;
+      }
+    }
+
+
+    .title.big {
+      font-size: 26px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+
+    .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+
     </style>
   </template>
 </dom-module>
@@ -18188,7 +18220,8 @@ THREE.MorphBlendMesh.prototype.update=function(a){for(var b=0,c=this.animationsL
       }
     </style>
 
-    <div>© 2016 Eunate Technology, Ltd. - Made with ♥ from <iron-icon src="../images/basque-flag-64x64.png"></iron-icon>. Code licensed under the BSD License.</div>
+    <div>© 2016 Eunate Technology, S. L. - Made with ♥ from <iron-icon src="../images/basque-flag-64x64.png"></iron-icon>.</div>
+
   </template>
 
   <script>
