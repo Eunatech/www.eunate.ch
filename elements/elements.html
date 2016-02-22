@@ -17075,13 +17075,13 @@ module.exports = Array.isArray || function (arr) {
 
     .title.big {
       font-size: 26px;
-      padding: 8px 0 16px;
+      padding: 8px  16px;
       color: var(--google-grey-500);
     }
 
     .big {
       font-size: 22px;
-      padding: 8px 0 16px;
+      padding: 8px 16px 16px;
       color: var(--google-grey-500);
     }
 
@@ -18215,12 +18215,16 @@ THREE.MorphBlendMesh.prototype.update=function(a){for(var b=0,c=this.animationsL
         display: block;
       }
 
-      div{
+      .container{
         margin-top: 20px;
+        padding: 16px;
       }
     </style>
 
-    <div>© 2016 Eunate Technology, S. L. - Made with ♥ from <iron-icon src="../images/basque-flag-64x64.png"></iron-icon>.</div>
+    <div class="container">
+      <div>Made with ♥ from <iron-icon src="../images/basque-flag-64x64.png"></iron-icon></div>
+      <div>© 2016 Eunate Technology, S. L.</div>
+    </div>
 
   </template>
 
