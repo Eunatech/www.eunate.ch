@@ -28,10 +28,9 @@ paper-card.construction{
 
 .branding img{
   display: inline-block;
-  height: 1.2em;
-  margin: -.1em .25em -.1em 0;
+  height: 1.5em;
+  margin: -.1em .1em;
   position: relative;
-  top: -.1em;
   vertical-align: middle;
   }
 
