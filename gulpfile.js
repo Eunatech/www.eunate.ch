@@ -202,7 +202,7 @@ gulp.task('cache-config', function(callback) {
     './',
     'bower_components/webcomponentsjs/webcomponents-lite.min.js',
     '{data, elements,scripts,styles}/**/*.*',
-    '/?homescreen=1',
+    '/?homescreen=1'],
     {cwd: dir}, function(error, files) {
     if (error) {
       callback(error);
