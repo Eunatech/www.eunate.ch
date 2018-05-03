@@ -1,17 +1,237 @@
-<!doctype html><html lang="en"><head><script type="text/javascript">
-    var host = "eunate.ch";
-    if (
-      (host == window.location.host// || hostsub == window.location.host
-        ) &&
-      (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-  </script><link rel="canonical" href="https://eunate.ch"><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Eunate Technology"><title>Eunate Technology</title><meta name="theme-color" content="#311B92"><link rel="manifest" href="manifest.json"><meta name="msapplication-TileColor" content="#7E57C2"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="EunaTech"><link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="Eunate Technology"><link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png"><meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"><link rel="stylesheet" href="styles/main.css"><script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script><link rel="import" href="elements/elements.html"><style is="custom-style" include="shared-styles"></style></head><body unresolved=""><span id="browser-sync-binding"></span><template is="dom-bind" id="app"><paper-drawer-panel id="paperDrawerPanel"><paper-scroll-header-panel drawer="" fixed=""><paper-toolbar id="drawerToolbar"><span class="menu-name">Menu</span></paper-toolbar><paper-menu attr-for-selected="data-route" selected="[[route]]"><a data-route="home" href="{{baseUrl}}"><iron-icon icon="icons:trending-up"></iron-icon><span>Home</span></a> <a data-route="users" href="{{baseUrl}}users"><iron-icon icon="icons:language"></iron-icon><span>Services</span></a> <a data-route="contact" href="{{baseUrl}}contact"><iron-icon icon="icons:face"></iron-icon><span>Contact</span></a></paper-menu></paper-scroll-header-panel><paper-scroll-header-panel main="" id="headerPanelMain" condenses="" keep-condensed-header=""><paper-toolbar id="mainToolbar" class="tall"><paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle=""></paper-icon-button><div class="middle middle-container branding"><div class="app-name"><a href="https://eunate.ch"><img src="./images/eunatech_pink.png" alt="Eunatech">unate <span class="logo-askew">T</span>echnology</a></div></div><div class="bottom bottom-container"><div class="bottom-title">The future of medicine today</div></div></paper-toolbar><div class="content"><iron-pages attr-for-selected="data-route" selected="{{route}}"><section data-route="home"><paper-card heading="This website is under construction.." class="construction fancy"><div class="card-actions"><span>Come back soon!</span></div></paper-card><div class="intro"><div class="title big">Welcome!</div><div class="title medium">We help you create the web tools you need (and more!) for your bio-medical application.</div><div class="title medium"></div><div class="title medium">We provide custom solutions whether you are a neurologist, a radiologist, a dentist, a researcher, a veterinary or just passionate about medical imaging and the web.</div></div><div class="big">Join us!</div><div class="cards center"><paper-card class="fancy narrow"><div class="card-content icon"><iron-icon class="bigIcon" icon="icons:trending-up"></iron-icon></div><div class="card-content"><div class="big">Blazing speed</div><div class="medium">WebGL under the hood!</div></div></paper-card><paper-card class="fancy narrow"><div class="card-content icon"><iron-icon class="bigIcon" icon="icons:important-devices"></iron-icon></div><div class="card-content"><div class="big">Accessibility</div><div class="medium">Computers, tablets, phones, tvs</div></div></paper-card><paper-card class="fancy narrow"><div class="card-content icon"><iron-icon class="bigIcon" icon="icons:loyalty"></iron-icon></div><div class="card-content"><div class="big">Low cost</div><div class="medium">Easy deploy, maintain & upgrade</div></div></paper-card><paper-card class="fancy narrow"><div class="card-content icon"><iron-icon class="bigIcon" icon="icons:lock"></iron-icon></div><div class="card-content"><div class="big">Secured</div><div class="medium">You are in control of your data</div></div></paper-card></div><div class="big">Some cool stuff we can do for you</div><div class="cards"><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">Volumes and slices</div><div class="medium">DICOM, NII, NRRD, etc.</div><div class="medium">Under construction.</div></div></paper-card><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">Volume rendering</div><div class="medium">....</div><div class="medium">Under construction.</div></div></paper-card><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">Label maps</div><div class="medium">....</div><div class="medium">Under construction.</div></div></paper-card><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">Meshes</div><div class="medium">VTK, STL</div><div class="medium">Under construction.</div></div></paper-card><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">Fibers</div><div class="medium">VTK, STL</div><div class="medium">Under construction.</div></div></paper-card><paper-card class="fancy"><chris-brain url="data/brain3.js"></chris-brain><div class="card-content"><div class="big">More coming soon!</div><div class="medium">Widgets, etc...c</div><div class="medium">Under construction.</div></div></paper-card></div><my-footer></my-footer></section><section data-route="users"><paper-card heading="This website is under construction.." class="construction"><div class="card-actions"><span>Come back soon!</span></div></paper-card><my-footer></my-footer></section><section data-route="contact"><paper-card heading="This website is under construction.." class="construction"><div class="card-actions"><span>Come back soon!</span></div></paper-card><my-footer></my-footer></section></iron-pages></div></paper-scroll-header-panel></paper-drawer-panel><paper-toast id="toast"><span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span></paper-toast><paper-toast id="caching-complete" duration="6000" text="Caching complete! This app will work offline."></paper-toast><platinum-sw-register auto-register="" clients-claim="" skip-waiting="" base-uri="bower_components/platinum-sw/bootstrap" on-service-worker-installed="displayInstalledToast"><platinum-sw-cache default-cache-strategy="fastest" cache-config-file="cache-config.json"></platinum-sw-cache></platinum-sw-register></template><script src="scripts/app.js"></script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html>
+    <head>
+			<script type="text/javascript">
+				var host = "eunate.ch";
+				if (
+				  (host == window.location.host// || hostsub == window.location.host
+					) &&
+				  (window.location.protocol != "https:"))
+					window.location.protocol = "https";
+			  </script><link rel="canonical" href="https://eunate.ch">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Eunate.ch</title>
+	<style>
+		body { margin: 0; }
+		canvas { width: 100%; height: 100% }
+		h1 { 
+			position: absolute;
+			top: 0px; width: 100%;
+			text-align: center;
+			color: #ffffff;
+		}
+		.contact {
+			position: absolute;
+			bottom: 20px; 
+			width: 100%;
+			text-align: center;
+			color: #ffffff;
+			font-family: monospace;
+			font-size: 18px;
+			font-weight: lighter;
+		}
+	</style>
+    </head>
 
-  ga('create', 'UA-73422877-1', 'auto');
-  ga('send', 'pageview');
+    <body>
+	<div class="contact">
+		<div>nicolas@eunate.ch</div>
+		</br>
+		<div>didier@eunate.ch</div>
+	</div>
 
-</script></body></html>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.js"></script>
+
+	<script src="./CopyShader.js"> </script>
+	<script src="./DigitalGlitch.js"> </script>
+
+	<script src="./EffectComposer.js"> </script>
+	<script src="./RenderPass.js"> </script>
+	<script src="./MaskPass.js"> </script>
+	<script src="./ShaderPass.js"> </script>
+	<script src="./GlitchPass.js"> </script>
+<script>
+
+//Lets play with the brain
+var camera, scene, renderer, composer;
+var object, light;
+
+var light1, light2, light3, light4;
+var clock = new THREE.Clock();
+
+var glitchPass;
+var raycaster = new THREE.Raycaster();
+var mouse = new THREE.Vector2();
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+var plane;
+
+init();
+
+function init() {
+	//renderer
+	renderer = new THREE.WebGLRenderer();
+	renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	document.body.appendChild( renderer.domElement );
+
+	//scene
+	scene = new THREE.Scene();
+	scene.fog = new THREE.FogExp2( 0x212121, 0.035 );
+	//scene.fog = new THREE.FogExp2(0xff0000, 0.03);
+//	scene.fog = new THREE.Fog(0xffffff, 100, 130);
+
+	// create the ground plane
+        var planeGeometry = new THREE.PlaneGeometry(500, 500);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0x121212});
+        plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.receiveShadow = true;
+        // rotate and position the plane
+        plane.position.x = -50;
+        plane.position.y = 50;
+        plane.position.z = -50;
+        // add the plane to the scene
+        scene.add(plane);
+
+		var size = 100;
+var divisions = 10;
+
+var gridHelper = new THREE.GridHelper( size, divisions );
+gridHelper.position.x = 0;
+gridHelper.position.y = -10;
+gridHelper.position.z = 0;
+scene.add( gridHelper );
+	
+	//light
+	var sphere = new THREE.SphereGeometry( 0.5, 16, 8 );
+	light1 = new THREE.PointLight( 0x0000ff, 2, 50 );
+	light1.add( new THREE.Mesh( sphere, new THREE.MeshPhysicalMaterial( { color: 0x0000ff, emissive: 0xffffff } ) ) );
+	scene.add( light1 );
+	
+	light2 = new THREE.PointLight( 0x42f4eb, 2, 50 );
+	// light2.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0x42f4eb } ) ) );
+	scene.add( light2 );
+
+	light3 = new THREE.PointLight( 0xccfffc, 2, 50 );
+	light3.add( new THREE.Mesh( sphere, new THREE.MeshPhysicalMaterial( { color: 0xccfffc, emissive: 0xffffff } ) ) );
+	scene.add( light3 );
+
+	light4 = new THREE.PointLight( 0xffffff, 2, 50 );
+	light4.add( new THREE.Mesh( sphere, new THREE.MeshPhysicalMaterial( { color: 0xffffff, emissive: 0xffffff } ) ) );
+	light4.position.x = 20;
+	light4.position.y = 10;
+	light4.position.z = -10;
+	scene.add( light4 );
+
+	//camera
+	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.01, 100000 );
+	camera.position.x = 20;
+	camera.position.y = 5;
+	camera.position.z = 20;
+	camera.lookAt(new THREE.Vector3());
+
+	camera.add(light4);
+	scene.add( camera );
+
+	plane.lookAt( camera.position );
+
+	// instantiate a loader
+	loader = new THREE.JSONLoader();
+	// load a resource
+	loader.load(
+		// resource URL
+		'./brain.js',
+
+
+		// onLoad callback
+		function ( geometry, materials ) {
+			var material = materials[ 0 ];
+			var newMat = new THREE.MeshPhysicalMaterial( {
+				color: 0xccfffc, emissive: 0x212121,
+				metalness: 0.1, roughness: 0.1,
+				} );
+			object = new THREE.Mesh( geometry, newMat );
+			scene.add( object );
+
+			glitchPass = new THREE.GlitchPass();
+	glitchPass.renderToScreen = true;
+	glitchPass.resetTest = function () {
+		newMat.wireframe = newMat.wireframe ? false : true;
+	}
+	composer.addPass(glitchPass);
+
+
+
+function onMouseMove( event ) {
+mouse.x = ( event.clientX - windowHalfX ) * 0.02;
+mouse.y = ( event.clientY - windowHalfY ) * 0.02;
+}
+
+window.addEventListener( 'mousemove', onMouseMove, false );
+
+animate();
+		},
+
+		// onProgress callback
+		function ( xhr ) {
+			console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+		},
+
+		// onError callback
+		function( err ) {
+			console.log( 'An error happened' );
+		}
+	);
+
+	//postprocessing
+	composer = new THREE.EffectComposer(renderer);
+	composer.addPass(new THREE.RenderPass(scene, camera));
+
+
+	window.addEventListener( 'resize', onWindowResize, false );
+}
+
+function onWindowResize() {
+	windowHalfX = window.innerWidth / 2;
+	windowHalfY = window.innerHeight / 2;
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+function animate() {
+	requestAnimationFrame( animate );
+
+	var time = Date.now() * 0.0005;
+	var delta = clock.getDelta();
+	light1.position.x = Math.sin( time * 0.7 ) * 15;
+	light1.position.y = Math.cos( time * 0.5 ) * 20;
+	light1.position.z = Math.cos( time * 0.3 ) * 15;
+	// light2.position.x = Math.cos( time * 0.3 ) * 15;
+	// light2.position.y = Math.sin( time * 0.5 ) * 20;
+	// light2.position.z = Math.sin( time * 0.7 ) * 15;
+	light3.position.x = Math.sin( time * 0.7 ) * 15;
+	light3.position.y = Math.cos( time * 0.3 ) * 20;
+	light3.position.z = Math.sin( time * 0.5 ) * 15;
+	// light4.position.x = Math.sin( time * 0.3 ) * 30;
+	// light4.position.y = Math.cos( time * 0.7 ) * 40;
+	// light4.position.z = Math.sin( time * 0.5 ) * 30;
+
+	object.rotation.x += 0.008;
+	object.rotation.y += 0.01;
+	// //renderer.render( scene, camera );
+	// 				camera.position.x += ( mouse.x - camera.position.x ) * 0.05;
+	// 			camera.position.y += ( - mouse.y - camera.position.y ) * 0.05;
+
+				camera.lookAt( scene.position );
+	// 			plane.lookAt( camera.position);
+				
+
+	composer.render();
+}
+
+//animate();
+</script>
+    </body>
+</html>
